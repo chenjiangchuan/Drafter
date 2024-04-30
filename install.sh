@@ -6,7 +6,7 @@ cd Drafter
 
 # check if static link is needed
 if [ -d "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift_static/macosx" ];then
-    swift build -c release -Xswiftc -static-stdlib
+    swift build -c release -Xswiftc
 else
     swift build -c release
 fi
